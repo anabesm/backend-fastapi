@@ -14,4 +14,4 @@ def health_check():
 
 @app.post("/registros/")
 def criar_registro(registro: Registro):
-    return {"mensagem": "Registro processado", "id": registro.id}
+    return {"mensagem": "Registro processado", "id": registro.id, "status": "sucesso"}
